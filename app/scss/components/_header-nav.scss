@@ -1,0 +1,23 @@
+.header__nav{
+  grid-column: 2;
+  nav{
+    text-transform: uppercase;
+  }
+
+  & ul{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  & a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: .9em;
+    margin-right: 3em;
+  }
+
+  & ul li:nth-last-child(1) a{
+    margin-right: 0;
+  }
+}

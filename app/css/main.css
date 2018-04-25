@@ -44,3 +44,96 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
+
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+h1, h2 {
+  font-family: 'Raleway', sans-serif; }
+
+.header__nav {
+  grid-column: 2; }
+  .header__nav nav {
+    text-transform: uppercase; }
+  .header__nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .header__nav a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: .9em;
+    margin-right: 3em; }
+  .header__nav ul li:nth-last-child(1) a {
+    margin-right: 0; }
+
+.header__logo {
+  grid-column: 5;
+  justify-self: end;
+  margin-right: 2em; }
+
+.header__object {
+  grid-column: 2;
+  max-width: 95%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  .header__object .line {
+    background-color: #414040;
+    width: 20px;
+    height: 2px;
+    display: inline-block;
+    margin-bottom: 3em; }
+  .header__object .secondary-line {
+    background-color: #4d4d4d;
+    width: 20px;
+    height: 2px;
+    display: block;
+    margin-top: 1em; }
+  .header__object h1 {
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: 300; }
+  .header__object p {
+    margin-top: 2em;
+    font-weight: 300;
+    font-size: .9em;
+    line-height: 1.4em;
+    margin-bottom: 1em; }
+  .header__object .header__object__decoration {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 30%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .header__object span.bold-line {
+    width: 20px;
+    height: 3px;
+    background-color: #fff;
+    display: inline-block; }
+  .header__object .header__object__arrows {
+    margin-top: 5em; }
+
+header {
+  color: #fff;
+  padding-top: 2.5em;
+  display: grid;
+  grid-template-columns: 100px -webkit-min-content 1fr 1fr -webkit-min-content;
+  grid-template-columns: 100px min-content 1fr 1fr min-content;
+  background: url("../images/header.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  min-height: 100vh; }
+
+.header__wrapper {
+  max-width: 95%;
+  margin-bottom: 10em; }

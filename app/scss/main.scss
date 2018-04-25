@@ -6,3 +6,10 @@
 
 @import "base/reset";
 @import "base/typography";
+
+@import "components/header-nav";
+@import "components/header-logo";
+@import "components/header-object";
+
+@import "layouts/header";
+@import "layouts/header-wrapper";

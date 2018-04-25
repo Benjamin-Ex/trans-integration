@@ -1,0 +1,11 @@
+header{
+  color: #fff;
+  padding-top: 2.5em;
+  display: grid;
+  grid-template-columns: 100px min-content 1fr 1fr min-content;
+  background: url('../images/header.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  min-height: 100vh;
+}
