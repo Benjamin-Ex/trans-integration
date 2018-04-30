@@ -10,4 +10,9 @@ header{
   display: grid;
   grid-template-columns: .2fr .4fr 1fr;
   grid-template-rows: 81vh 40vh;
+  @media (max-width: $medium-devices) {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 30vh;
+      padding-left: 5%;
+  }
 }

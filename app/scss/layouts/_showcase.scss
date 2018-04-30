@@ -4,6 +4,10 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 40vh 40vh;
+  @media (max-width: $medium-devices) {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+  }
 
     &__emphasis{
       grid-row: 1 / 3;

@@ -6,6 +6,9 @@
   @media (max-width: $large-devices) {
       grid-template-rows: 40vh;
   }
+  @media (max-width: $medium-devices) {
+    grid-template-rows:auto;
+  }
 
 
   &-emphasis{

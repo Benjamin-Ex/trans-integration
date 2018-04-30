@@ -3,6 +3,9 @@
   grid-column: 2 / 3;
   grid-row: 1;
   align-self: end;
+  @media (max-width: $medium-devices) {
+    margin-top: 10em;
+  }
 
   & .line{
     background-color: #414040;

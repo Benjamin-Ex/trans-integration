@@ -10,6 +10,9 @@
   & ul{
     display: flex;
     justify-content: space-between;
+    @media (max-width: $medium-devices) {
+        display: none;
+    }
   }
 
   & a{
@@ -23,4 +26,44 @@
   & ul li:nth-last-child(1) a{
     margin-right: 0;
   }
+
+  // hambruger menu
+  @media (max-width: $medium-devices) {
+    .hamburger .line{
+      width: 35px;
+      height: 3px;
+      display: block;
+      background-color: #fff;
+      margin-bottom: 8px;
+      transition: all .2s ease-in-out;
+    }
+
+    .hamburger {
+      cursor: pointer;
+    }
+
+    .hamburger.is-active .line:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger.is-active .line:nth-child(1) {
+      transform: translateY(13px) rotate(45deg);
+    }
+
+    .hamburger.is-active .line:nth-child(3) {
+      transform: translateY(-13px) rotate(-45deg);
+    }
+    & li{
+      list-style: none;
+      margin-bottom: 1em;
+      font-weight: bold;
+    }
+  }
+}
+
+.mobile-menu{
+  display: none;
+  position: absolute;
+  height: 20vh;
+  margin-top: 2em;
 }

@@ -31,6 +31,9 @@
         @media (max-width: $large-devices) {
           min-width: 23.5em;
         }
+        @media (max-width: $medium-devices) {
+          min-width: 10em;
+        }
       }
 
       & .button{
@@ -42,7 +45,7 @@
         cursor: pointer;
         padding: 1.3em 3em;
         @media (max-width: $large-devices) {
-          display: block;
+          display: inline-block;
           padding: 0.8em;
         }
       }
