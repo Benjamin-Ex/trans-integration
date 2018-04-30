@@ -1,7 +1,8 @@
 .header__object{
-  grid-column: 2;
   max-width: 95%;
-  box-sizing: border-box;
+  grid-column: 2 / 3;
+  grid-row: 1;
+  align-self: end;
 
   & .line{
     background-color: #414040;

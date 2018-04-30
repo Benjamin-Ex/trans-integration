@@ -1,5 +1,8 @@
 .header__nav{
   grid-column: 2;
+  grid-row: 1;
+  width: 80%;
+
   nav{
     text-transform: uppercase;
   }
@@ -14,7 +17,7 @@
     color: #fff;
     font-family: 'Raleway', sans-serif;
     font-size: .9em;
-    margin-right: 3em;
+    margin-right: 2em;
   }
 
   & ul li:nth-last-child(1) a{
